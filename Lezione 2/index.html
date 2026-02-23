@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and input fields</title>
+</head>
+<body>
+    <h1>Interazione con l'utente</h1>
+    <form onsubmit="alert('Registrazione inviata')">
+    <div>
+        <input type="text" placeholder="Il tuo nome" />
+    </div>
+     <div>
+        <input type="text" placeholder="Il tuo cognome" />
+    </div>
+     <div>
+        <input type="text" placeholder="Il tuo indirizzo email" />
+    </div>
+     <div>
+        <input type="text" placeholder="La tua password" />
+    </div>
+     <div>
+        <input type="date" id="data_nascita" name="data_nascita">
+    </div>
+    <div>
+        <input type="email" placeholder="Il tuo numero di telefono" />
+<!-- checkbox per gusti musicali -->
+    </div>
+    <input type="checkbox" id="rock" name="musica[]" value="Rock">
+    <label for="rock">Rock</label><br>
+
+    <input type="checkbox" id="pop" name="musica[]" value="Pop">
+    <label for="pop">Pop</label><br>
+
+    <input type="checkbox" id="jazz" name="musica[]" value="Jazz">
+    <label for="jazz">Jazz</label><br>
+
+    <input type="checkbox" id="classica" name="musica[]" value="Classica">
+    <label for="classica">Classica</label><br>
+    </div>
+<!-- checkbox per gusti musicali -->
+     <input type="checkbox" id="termini" name="termini" required>
+    <label for="termini">
+        Accetto i termini e le condizioni
+    </label>
+    <div>
+    <button type="submit">INVIA REGISTRAZIONE</button>
+</div>
+   </form>
+</body>
+</html>
