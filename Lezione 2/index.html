@@ -1,52 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form and input fields</title>
+    <title>Colosseo</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* RESET */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* SEZIONE PRINCIPALE */
+        .main-section {
+            padding: 20px;
+        }
+
+        /* HERO IMAGE */
+        .image-container {
+            height: 500px;
+            background-image: url('https://www.romaguida.com/wp-content/uploads/2024/06/Colosseo-Arena-Foro-4-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* TITOLO CENTRALE */
+        .image-container h1 {
+            font-family: 'Prata', serif;
+            font-size: 64px;
+            font-weight: 400;
+            color: white;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(174, 10, 10, 0.6);
+        }
+
+        /* SOTTOTITOLO */
+        h3 {
+            font-family: 'Prata', serif;
+            font-size: 24px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        /* LINK AUTORE */
+        a.autore {
+            font-weight: 600;
+            font-style: italic;
+            text-decoration: none;
+            color: #a85d2c;
+        }
+
+        /* TITOLO LUOGHI CORRELATI */
+        h6 {
+            padding: 22px;
+            margin-top: 56px;
+            margin-bottom: 0;
+            color: white;
+            border-radius: 6px;
+            background: linear-gradient(to right, #a85d2c, #d8a35d);
+            font-size: 14px;
+        }
+
+        /* LISTA */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            padding: 6px 0 6px 22px;
+            border-bottom: 1px solid #dfdfdf;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul li a:visited {
+            color: #a85d2c;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>Interazione con l'utente</h1>
-    <form onsubmit="alert('Registrazione inviata')">
-    <div>
-        <input type="text" placeholder="Il tuo nome" />
-    </div>
-     <div>
-        <input type="text" placeholder="Il tuo cognome" />
-    </div>
-     <div>
-        <input type="text" placeholder="Il tuo indirizzo email" />
-    </div>
-     <div>
-        <input type="text" placeholder="La tua password" />
-    </div>
-     <div>
-        <input type="date" id="data_nascita" name="data_nascita">
-    </div>
-    <div>
-        <input type="email" placeholder="Il tuo numero di telefono" />
-<!-- checkbox per gusti musicali -->
-    </div>
-    <input type="checkbox" id="rock" name="musica[]" value="Rock">
-    <label for="rock">Rock</label><br>
 
-    <input type="checkbox" id="pop" name="musica[]" value="Pop">
-    <label for="pop">Pop</label><br>
+<div class="main-section">
 
-    <input type="checkbox" id="jazz" name="musica[]" value="Jazz">
-    <label for="jazz">Jazz</label><br>
-
-    <input type="checkbox" id="classica" name="musica[]" value="Classica">
-    <label for="classica">Classica</label><br>
+    <div class="image-container">
+        <h1>Colosseo</h1>
     </div>
-<!-- checkbox per gusti musicali -->
-     <input type="checkbox" id="termini" name="termini" required>
-    <label for="termini">
-        Accetto i termini e le condizioni
-    </label>
-    <div>
-    <button type="submit">INVIA REGISTRAZIONE</button>
+
+    <h3>Roma, Lazio</h3>
+
+    <p>
+        Autore: 
+        <a class="autore" href="https://www.romaguida.com" target="_blank">
+            Davide Roano
+        </a>
+    </p>
+
+    <h6>Luoghi correlati</h6>
+
+    <ul>
+        <li><a href="./foro-romano.html">Foro Romano</a></li>
+        <li><a href="./pantheon.html">Pantheon</a></li>
+        <li><a href="./fontana-di-trevi.html">Fontana di Trevi</a></li>
+        <li><a href="./piazza-navona.html">Piazza Navona</a></li>
+        <li><a href="./vaticano.html">Città del Vaticano</a></li>
+    </ul>
+
 </div>
-   </form>
+
+<footer>
+    <a href="./index.html">Torna alla homepage</a>
+</footer>
+
 </body>
 </html>
