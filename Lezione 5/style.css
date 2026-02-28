@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background: #f9f9f9;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 90px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.side-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.side-item ion-icon {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* MAIN */
+.main {
+    width: 100%;
+}
+
+/* TOPBAR */
+.topbar {
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 30px;
+}
+
+/* SEARCH */
+.search {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.search input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.mic {
+    font-size: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.top-icons ion-icon {
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* VIDEO CARD */
+.video-card {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-info {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.channel-icon img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.video-info h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.video-info p {
+    font-size: 13px;
+    color: gray;
+}
